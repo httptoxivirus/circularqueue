@@ -26,6 +26,11 @@ void enqueue(int q[], int value) {
 void dequeue(int q[]) {
     if(f == -1)
     cout<<"Queue is empty \n";
+
+    if(f == r) {
+    f = 0;
+    r = 0;
+    }
     
     else if(f == size-1)
         f = 0;
